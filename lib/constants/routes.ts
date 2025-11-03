@@ -5,7 +5,8 @@
 export const ROUTES = {
   HOME: "/",
   SIGNIN: "/signin",
-  SIGNUP: "/signup",
+  ME: "/me",
+  POST_DETAIL: (id: string) => `/posts/${id}`,
 } as const;
 
 export type RoutePath = (typeof ROUTES)[keyof typeof ROUTES];
